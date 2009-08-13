@@ -78,7 +78,8 @@ function blog_form(&$node) {
   global $nid;
   $iid = isset($_GET['iid']) ? (int)$_GET['iid'] : 0;
   $type = node_get_types('type', $node);
-
+  $unsinn = true;
+  $ultimativerunsinn = false;
 
   if (empty($node->body)) {
     // If the user clicked a "blog it" link, we load the data from the
